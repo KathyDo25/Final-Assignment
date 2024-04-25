@@ -1,0 +1,315 @@
+
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    font-family: "Permanent Marker";
+    color: #6f86d6; 
+    font-size: 25pt;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+}
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    margin-top: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ffc200;
+}
+
+.hero {
+    background-image: url('assets/Mountain.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.accordion-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.accordion-menu li {
+    flex: 1;
+}
+.accordion-menu label {
+    display: block;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    margin-bottom: 1px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.accordion-menu label:hover {
+    background-color:#a1c4fd;
+}
+
+.accordion-menu input[type="checkbox"] {
+    display: none;
+}
+
+.submenu {
+    display: none;
+    padding-left: 20px;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px 0;
+    color: #555;
+
+}
+
+.accordion-menu input[type="checkbox"]:checked + label {
+    background-color: #a1c4fd;
+}
+.accordion-menu input[type="checkbox"]:checked + label + .submenu {
+    display: block;
+}
+
+.about-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.videos-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.videos-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-container p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.videos-section p {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #999999;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #ff9a9e;
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
+}
+
+
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info h3 {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #000000;
+    text-decoration:underline;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding: 150px 0;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        margin-bottom: 20px;
+    }
+    .portfolio-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        padding: 100px 0;
+    }
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        height: 150px;
+        align-items: center; 
+        text-align: center;
+    }
+    .accordion-menu {
+        flex-direction: column;
+    }
+    .accordion-menu input[type="checkbox"]:checked + label + .submenu {
+        display: block;
+        border-top: 1px solid #ccc;
+        margin-top: 10px;
+    }
+}

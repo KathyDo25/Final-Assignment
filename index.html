@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathy's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Kathy's Portfolio</h1>
+            </div>
+            <ul class="accordion-menu">
+                <li>
+                    <input type="checkbox" id="menu1">
+                    <label for="menu1">Home</label>
+                    <ul class="submenu">
+                        <li><a href="index.html">About Me</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" id="menu2">
+                    <label for="menu2">Portfolio</label>
+                    <ul class="submenu">
+                        <li><a href="portfolio.html">View Portfolio</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Kathy's Portfolio</h2>
+                <p>Discover my latest projects and skills.</p>
+                <button id="portfolioButton">View Portfolio</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hi, I'm Kathy! I'm a passionate designer with a love for creating beautiful and functional designs. Currently, I'm actively seeking opportunities in the design field to contribute my skills and creativity. Whether it's graphic design, web design, or UI/UX design, I'm ready to take on new challenges and bring innovative ideas to life.</p>
+                <p>Feel free to explore my portfolio to see examples of my work, and don't hesitate to reach out if you think I'd be a good fit for your team!</p>
+            </div>
+        </section>
+        <hr class="divider">
+        <section class="videos-section">
+            <div class="container">
+                <h2>Vietnamese Beauty</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NSnkb1IAjbE?si=T0UrnSgr6FLK1F5u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Video 1: Exploring the Beauty of Vietnam</p>
+            </div>
+            <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/addfbs0kQDE?si=sXyJipt1yPDssJ4P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Video 2: Vietnamese Cuisine and Culture</p>
+                </div>
+                <p>I'm proud of my Vietnamese heritage and wants to share the beauty of Vietnam with the world. Growing up in Vietnam, I have developed a deep appreciation for its culture, landscapes, and cuisine. Through these videos, I hopes to showcase the richness and diversity of her home country.</p>
+            </div>
+        </section>
+        <hr class="divider">
+        <section class="contact-form">
+            <h2>Send me a message</h2>
+            <p> If you're interested in co-operate with me!</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:kathy@example.com">kathy@example.com</a></p>
+            <p>Phone: <a href="tel:403-555-666">403-555-666</a></p>
+            <p>Address: 123 Street, Calgary, AB</p>
+        </div>
+        <p>&copy; 2024 Kathy's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

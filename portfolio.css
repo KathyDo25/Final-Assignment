@@ -1,0 +1,263 @@
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+header {
+    padding: 20px;
+    text-align: center;
+}
+.logo {
+    font-family: "Permanent Marker";
+    color: #6f86d6; 
+    font-size: 25pt;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.accordion-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.accordion-menu li {
+    flex: 1;
+}
+.accordion-menu label {
+    display: block;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    margin-bottom: 1px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.accordion-menu label:hover {
+    background-color:#a1c4fd;
+}
+
+.accordion-menu input[type="checkbox"] {
+    display: none;
+}
+
+.submenu {
+    display: none;
+    padding-left: 20px;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px 0;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.accordion-menu input[type="checkbox"]:checked + label {
+    background-color: #a1c4fd;
+}
+.accordion-menu input[type="checkbox"]:checked + label + .submenu {
+    display: block;
+}
+
+/* Main Content Styles */
+.portfolio-section {
+    padding: 50px 0;
+    background-color: #ffecd2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-section h2 {
+    font-size: 30pt;
+    margin-bottom: 20px;
+}
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.portfolio-item h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.portfolio-item p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.portfolio-item {
+    max-width: 100%;;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+.portfolio-item:first-child {
+    align-self: center;
+}
+
+.first-project {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.first-project h2 {
+    margin-bottom: 20px;
+    font-family: "Permanent Marker";
+    color: #6f86d6; 
+    font-size: 40pt;
+}
+
+.first-project p {
+    color: #000000;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+}
+
+footer {
+    background-color: #ff9a9e;
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info h3 {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #000000;
+    text-decoration:underline;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-links li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .accordion-menu li {
+        flex: 0 0 auto;
+    }
+    .accordion-menu label {
+        padding: 15px 20px;
+    }
+    .submenu {
+        padding-left: 20px;
+    }
+    .portfolio-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .first-project {
+        padding: 50px 0; 
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo h1 {
+        font-size: 50px;
+        text-align: left;
+    }
+    .accordion-menu {
+        flex-direction: column;
+    }
+    .accordion-menu input[type="checkbox"]:checked + label + .submenu {
+        display: block;
+        border-top: 1px solid #ccc;
+        margin-top: 10px;
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+    }
+    .portfolio-item {
+        max-width: 300px;
+    }
+    .first-project h2 {
+        font-size: 18pt;
+    }
+    .first-project p {
+        font-size: 14px;
+    }
+    .contact-info h3 {
+        font-size: 16px;
+    }
+    .contact-info p {
+        font-size: 12px;
+    }
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        height: 150px;
+        align-items: center; 
+        text-align: center;
+    }
+}
